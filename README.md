@@ -20,3 +20,4 @@
      
 6. Write a Ansible script to automate everything.
    - Write the yaml ansible script inside that user and run the script (ansible-playbook patching.yaml)
+![Screenshot (29)](https://github.com/nathsatyabrata/Automating-Linux-Patching-Process/assets/93023257/0d3cdee9-009f-43bb-929f-dff7a3a8c4f4)
