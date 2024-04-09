@@ -6,7 +6,8 @@
    - Open /etc/sudoers Add the user below root and wheel  (ex: ansadmin  ALL=(ALL)  NOPASSWD:ALL)
    - Open /etc/ssh/sshd_config then make PasswordAuthentication yes and uncoment PermitRootLogin prohibit-password
    - systemctl restart sshd and try to login that user accout (su ansadmin)
-  
+
+   - Loging to that used ( su -ansadmin)
    - Create ssh key (cmd: ssh-keygen)inside ansadmin user.
    - Copy the public key to other 3 node servers (cmd: ssh-copy-id ansadmin@172.31.26.115 (private ip)).
   
@@ -14,4 +15,8 @@
    - Add host server private ip to hosts file
      
 4. Then we will automate the Precheck and Postcheck proccess using shell script.
-5. Write a Ansible script to automate everything.
+   - Login inside that user
+   - create precheck.sh and postcheck.sh file and paste the shell script.
+     
+6. Write a Ansible script to automate everything.
+   - Write the yaml ansible script inside that user and run the script (ansible-playbook patching.yaml)
